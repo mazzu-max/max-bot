@@ -83,6 +83,7 @@ function generateMenuText(prefix, userId, groupId) {
 ℹ️ *.comando* (info)`),
         createSection(global.t('economyRankingSection', userId, groupId), `
 💰 *.portafoglio* (${global.t('balanceCommand', userId, groupId)})
+👛 *.portafoglio*
 🏦 *.banca*
 💳 *.donauc*
 🤑 *.ruba* @${global.t('userCommand', userId, groupId)}
