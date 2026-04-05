@@ -74,11 +74,8 @@ function generateMenuText(prefix, userId, groupId) {
     
     const sections = [
         createSection(global.t('musicAudioSection', userId, groupId), `
-🎵 *.play* (${global.t('songCommand', userId, groupId)})
-🎥 *.playlist*
-🎥 *.ytsearch*
-🔊 *.tomp3* (${global.t('videoCommand', userId, groupId)})`),
-        createSection(global.t('infoUtilitySection', userId, groupId), `
+ℹ️ *.comando* (info)`),
+       createSection(global.t('infoUtilitySection', userId, groupId), `
 ℹ️ *.comando* (info)`),
         createSection(global.t('imageEditSection', userId, groupId), `
 ℹ️ *.comando* (info)`),
