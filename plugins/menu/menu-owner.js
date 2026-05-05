@@ -9,10 +9,8 @@ const handler = async (message, { conn, usedPrefix, command }) => {
     const menuText = generateMenuText(usedPrefix, userId, groupId);
     const imagePath = path.join(__dirname, '../../media/owner.jpeg');
     const footerText = global.t('chooseMenu', userId, groupId) || 'Scegli un menu:';
-    const mainMenuText = global.t('mainMenuButton', userId, groupId) || '🏠 Menu Principale';
-    const adminMenuText = global.t('menuAdmin', userId, groupId) || '🛡️ Menu Admin';
-    const securityMenuText = global.t('menuSecurity', userId, groupId) || '🚨 Menu Sicurezza';
-    const groupMenuText = global.t('menuGroup', userId, groupId) || '👥 Menu Gruppo';
+    const mainMenuText = global.t('mainMenuButton', userId, groupId) || '🚨 Menu Sicurezza';
+    
     await conn.sendMessage(message.chat, {
         image: fs.existsSync(imagePath) ? { url: imagePath } : { url: 'https://telegra.ph/file/710185c7e0247662d8ca6.png' },
         caption: menuText,
