@@ -82,7 +82,7 @@ let handler = async (m, { conn, command, args, isOwner, isROwner }) => {
 
 handler.help = ['attiva <feature>', 'disabilita <feature>', 'disattiva <feature>']
 handler.tags = ['impostazioni', 'owner']
-handler.command = /^(attiva|disabilita|disattiva|on|off|enable|disable|activar|desactivar|activer|désactiver|aktivieren|deaktivieren|启用|禁用|включить|отключить|تفعيل|تعطيل|सक्षम|अक्षम|aktifkan|nonaktifkan|etkinleştir|etkisizleştir|1|0|true|false|si|no|yes)$/i
+handler.command = /^(attiva|disabilita|disattiva|)$/i
 handler.group = true
 handler.ownerOnly = false
 
