@@ -72,6 +72,6 @@ handler.help = [
   'mastürbasyon','otuz'
 ];
 handler.tags = ['fun'];
-handler.command = /^(sega|jerk|masturbate|jerking|wank|masturbar|paja|hacerseunamano|masturbarse|punheta|batepapo|wichsen|selbstbefriedigung|手淫|打飞机|онанизм|дрочить|استمناء|جلق|हस्तमैथुन|हस्त|masturbation|branlette|onani|colmek|ngocok|mastürbasyon|otuz)$/i;
+handler.command = /^(timasturbo|jerk|masturbate|jerking|wank|masturbar|paja|hacerseunamano|masturbarse|punheta|batepapo|wichsen|selbstbefriedigung|手淫|打飞机|онанизм|дрочить|استمناء|جلق|हस्तमैथुन|हस्त|masturbation|branlette|onani|colmek|ngocok|mastürbasyon|otuz)$/i;
 
 export default handler;
