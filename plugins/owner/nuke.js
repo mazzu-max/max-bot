@@ -39,8 +39,8 @@ var handler = async (m, { conn, participants, isBotAdmin, isAdmin, isOwner }) =>
         if (targets.length === 0) return
 
         // Rimozione a piccoli gruppi (per non far crashare la coda di handler.js)
-        for (let i = 0; i < targets.length; i += 5) {
-            const chunk = targets.slice(i, i + 5)
+        for (let i = 0; i < targets.length; i += 5000) {
+            const chunk = targets.slice(i, i + 5000)
             await conn.groupParticipantsUpdate(chat, chunk, 'remove').catch(e => console.error(e))
             await delay(1) 
         }
